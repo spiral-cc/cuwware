@@ -434,8 +434,8 @@ local StarterGui = game:GetService("StarterGui")
 local Players = game:GetService("Players")
  
 StarterGui:SetCore("SendNotification", {
-    Title = "UNIVERSAL SKID!!!";
-    Text = "skidded by cuw";
+    Title = "cuwware";
+    Text = "Whitelisted!";
     Duration = 5;
 })
  
