@@ -8,7 +8,7 @@ local ESP = {
     FadeOut = {
         OnDistance = true,
         OnDeath = false,
-        OnLeave = false,
+        OnLeave = false,rob
     },
     Options = { 
         Teamcheck = false, TeamcheckRGB = Color3.fromRGB(0, 255, 0),
@@ -18,7 +18,7 @@ local ESP = {
     Drawing = {
         Chams = {
             Enabled  = false,
-            Thermal = true,
+            Thermal = false,
             FillRGB = Color3.fromRGB(220, 220, 220),
             Fill_Transparency = 100,
             OutlineRGB = Color3.fromRGB(211, 211, 211),
@@ -55,12 +55,12 @@ local ESP = {
             Gradient = false, GradientRGB1 = Color3.fromRGB(211, 211, 211), GradientRGB2 = Color3.fromRGB(0, 0, 0), 
             GradientFill = true, GradientFillRGB1 = Color3.fromRGB(169, 169, 169), GradientFillRGB2 = Color3.fromRGB(0, 0, 0), 
             Filled = {
-                Enabled = true,
+                Enabled = false,
                 Transparency = 0.75,
                 RGB = Color3.fromRGB(0, 0, 0),
             },
             Full = {
-                Enabled = true,
+                Enabled = false,
                 RGB = Color3.fromRGB(255, 255, 255),
             },
             Corner = {
@@ -555,3 +555,12 @@ loop = RunService.RenderStepped:Connect(function()
         end
     end
 end)
+---
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+wait(1)
+Notification:Notify(
+    {Title = "ectasy", Description = "Whitelisted!"},
+    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
+)
