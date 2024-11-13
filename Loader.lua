@@ -28,5 +28,5 @@ end
 if isWhitelisted then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/spiral-cc/cuwware/refs/heads/main/main.lua"))() 
 else
-    game.Players.LocalPlayer:Kick("You are not whitelisted.")
+    game.Players.LocalPlayer:Kick("𝐄cstasy | You`re not whitelisted")
 end
